@@ -17,9 +17,9 @@ return [
     // 数据库名
     'database'        => 'sust',
     // 用户名
-    'username'        => 'makergyt',
+    'username'        => '',
     // 密码
-    'password'        => 'Gyt7521866119Gyt',
+    'password'        => '',
     // 端口
     'hostport'        => '3306',
     // 连接dsn

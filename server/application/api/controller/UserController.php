@@ -9,7 +9,7 @@ class UserController extends BaseController
     protected $config = [
         'url' => "https://api.weixin.qq.com/sns/jscode2session", 
         'appid' => 'wx56ff4f457b23ebd1', 
-        'secret' => 'e1410645f7e2014caf8faaae6971a7d4', 
+        'secret' => '', 
         'grant_type' => 'authorization_code',
     ];
     /**
