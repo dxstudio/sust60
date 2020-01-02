@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class="con-wrap ripple {{cardRightIn?'flipInY':''}} {{cardLeftIn?'fadeInLeft':''}}"  wx:for="{{list}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}" >
+  <view class='card-box' bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
+    <image wx:if="{{item.cover}}" class="card-img" style="background-image:url('{{item.cover}}')"></image>
+    <view class='card-title'>{{item.title}}</view> 
+               
+    <view class="card-con-wrap">
+      <view class='card-con-left'>
+        <view class='card-time'>{{item.time}}</view>
+      </view>
+      <view class='card-con-right'>
+        <view class='card-agree'  catchtap='toAgree' data-id='{{item._id}}'>
+          <image src="/img/{{item.agree?'agree-a.png':'agree.png'}}" class="ripple {{item.agree?'rubberBand':''}}"></image> 
+          <text>{{item.agreeNum}}</text> 
+        </view>  
+                   
+      </view>
+    </view>
+  </view>
+  </view>
+</view>

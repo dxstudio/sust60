@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo" wx:if="{{!hasUserInfo && canIUse}}">
+  	<image class="userinfo-avatar"
+            src="./user-unlogin.png"
+            background-size="cover">
+    </image>
+	<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> 授权登录 </button>  
+  </view>
+  <view class="userinfo" wx:else>
+  	<open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+  	<view>
+		<open-data type="userNickName" class="userinfo-nickname"></open-data>
+	</view>
+   </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="container">
+  <canvas canvas-id='share' style='width:100vw;height:90vh;'></canvas>
+  <view class='tips' bindtap='saveImageToPhotosAlbum'>点击保存图片</view>
+</view>
